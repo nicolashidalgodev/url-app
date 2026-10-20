@@ -1,4 +1,4 @@
-# url-short
+# url-app
 
 Aplicación Vue 3 + Vite para guardar enlaces con Firebase.
 
@@ -14,8 +14,8 @@ restricciones apropiadas para la API key en Google Cloud Console.
 ## Desplegar en GitHub Pages
 
 1. Sube el proyecto a un repositorio de GitHub. Si el repositorio se llama
-   `url-short`, la dirección predeterminada será
-   `https://<tu-usuario-github>.github.io/url-short/`.
+   `url-app`, la dirección predeterminada será
+   `https://<tu-usuario-github>.github.io/url-app/`.
 2. En el repositorio, abre **Settings > Pages** y selecciona **GitHub Actions**
    como origen del despliegue.
 3. Añade estos **Actions secrets** del repositorio en **Settings > Secrets and
@@ -35,7 +35,7 @@ restricciones apropiadas para la API key en Google Cloud Console.
    dominio.
 
 El workflow calcula la ruta base de Vite a partir del nombre del repositorio,
-para que los recursos y Vue Router funcionen bajo `/url-short/`. Vue Router usa
+para que los recursos y Vue Router funcionen bajo `/url-app/`. Vue Router usa
 rutas hash para permitir la navegación y recarga en GitHub Pages.
 
 ### Dominio propio
