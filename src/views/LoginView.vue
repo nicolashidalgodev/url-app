@@ -16,10 +16,8 @@ const handleSubmit = () => {
 </script>
 
 <template>
-  <AuthLayout
-    eyebrow="QUÉ BUENO VERTE"
+  <AuthLayout 
     title="Inicia sesión"
-    subtitle="Accede a tus enlaces guardados."
     footer-text="¿Aún no tienes cuenta?"
     link-text="Regístrate gratis"
     link-to="/register"

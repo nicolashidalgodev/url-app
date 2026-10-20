@@ -65,9 +65,9 @@ onUnmounted(() => window.clearTimeout(snackbarTimeout))
     <section class="dashboard-hero">
       <div class="container">
         <div class="hero-copy">
-          <span class="eyebrow">TU ESPACIO DE ENLACES</span>
-          <h1>Menos URL, <span>más claridad.</span></h1>
-          <p>Guarda tus enlaces importantes y encuentra todo lo que necesitas en segundos.</p>
+          <span class="eyebrow">TU ESPACIO DIGITAL</span>
+          <h1>Hola, {{ userStore.userData?.email?.split('@')[0] || 'bienvenido' }} <span aria-hidden="true">👋</span></h1>
+          <p>Organiza tus recursos favoritos y accede a ellos fácilmente cuando los necesites.</p>
         </div>
 
         <div class="dashboard-summary">
@@ -82,13 +82,7 @@ onUnmounted(() => window.clearTimeout(snackbarTimeout))
       </div>
     </section>
 
-    <section class="container dashboard-content">
-      <div class="welcome-row">
-        <div>
-          <h2>Hola, {{ userStore.userData?.email?.split('@')[0] || 'bienvenido' }} <span aria-hidden="true">👋</span></h2>
-          <p>¿Qué enlace quieres guardar hoy?</p>
-        </div>
-      </div>
+    <section class="container dashboard-content"> 
 
       <form class="add-link-card" @submit.prevent="handleSubmit">
         <div class="add-link-icon" aria-hidden="true">

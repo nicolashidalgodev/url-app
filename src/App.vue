@@ -16,7 +16,7 @@ const userStore = useUserStore()
         <div class="container">
           <router-link class="navbar-brand d-flex align-items-center gap-2" to="/">
             <span class="brand-mark" aria-hidden="true">u</span>
-            <span>url<span class="brand-accent">short</span></span>
+            <span>url<span class="brand-accent">app</span></span>
           </router-link>
 
           <button

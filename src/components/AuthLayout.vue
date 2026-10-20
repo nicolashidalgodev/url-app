@@ -1,6 +1,5 @@
 <script setup>
 defineProps({
-  eyebrow: { type: String, required: true },
   title: { type: String, required: true },
   subtitle: { type: String, required: true },
   footerText: { type: String, required: true },
@@ -18,13 +17,10 @@ defineProps({
         <div class="auth-illustration-mark" aria-hidden="true">
           <i class="bi bi-link-45deg"></i>
         </div>
-        <span class="auth-illustration-caption">Tu web, un poco más ordenada.</span>
       </div>
       <div class="auth-content">
-        <span class="eyebrow">{{ eyebrow }}</span>
         <h1>{{ title }}</h1>
-        <p class="auth-subtitle">{{ subtitle }}</p>
-
+        <hr>
         <slot />
 
         <p class="auth-switch">
